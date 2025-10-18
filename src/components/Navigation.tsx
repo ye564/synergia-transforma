@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,6 @@ const Navigation = () => {
       ],
     },
     { title: "Admisiones", path: "/admisiones" },
-    { title: "Blog", path: "/blog" },
     { title: "FAQ", path: "/faq" },
     { title: "Contacto", path: "/contacto" },
   ];
@@ -33,14 +33,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">SI</span>
-            </div>
-            <div className="hidden md:block">
-              <div className="font-heading font-bold text-lg text-foreground">Synergia Integral</div>
-              <div className="text-xs text-muted-foreground">Transformando Vidas</div>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Menu */}

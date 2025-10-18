@@ -14,7 +14,6 @@ import ApoyoPsicologico from "./pages/ApoyoPsicologico";
 import EmpleabilidadEmprendimiento from "./pages/EmpleabilidadEmprendimiento";
 import AsesoriaLegal from "./pages/AsesoriaLegal";
 import Admisiones from "./pages/Admisiones";
-import Blog from "./pages/Blog";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -37,7 +36,6 @@ const App = () => (
           <Route path="/empleabilidad-emprendimiento" element={<EmpleabilidadEmprendimiento />} />
           <Route path="/asesoria-legal" element={<AsesoriaLegal />} />
           <Route path="/admisiones" element={<Admisiones />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
