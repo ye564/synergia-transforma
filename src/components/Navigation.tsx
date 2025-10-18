@@ -72,7 +72,7 @@ const Navigation = () => {
           <div className="hidden lg:block">
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://wa.me/573203240400"
+                href="https://wa.me/3203240400"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -128,7 +128,7 @@ const Navigation = () => {
             <div className="px-4 pt-4 border-t border-border mt-4">
               <Button variant="hero" size="lg" className="w-full" asChild>
                 <a
-                  href="https://wa.me/573203240400"
+                  href="https://wa.me/3203240400"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"

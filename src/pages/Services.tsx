@@ -190,7 +190,7 @@ const Services = () => {
               <Link to="/admisiones">Inscríbete ahora</Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="bg-background/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
-              <a href="https://wa.me/573203240400" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/3203240400" target="_blank" rel="noopener noreferrer">
                 Habla por WhatsApp
               </a>
             </Button>
