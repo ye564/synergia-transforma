@@ -60,7 +60,7 @@ const ApoyoPsicologico = () => {
     {
       pregunta: "¿Cómo agendo mi primera sesión?",
       respuesta:
-        "Puedes agendar tu primera sesión a través de WhatsApp (320 324 0440) o desde nuestro formulario de contacto. Te contactaremos para coordinar día y hora según tu disponibilidad. La primera orientación es gratuita.",
+        "Puedes agendar tu primera sesión a través de WhatsApp (320 324 0400) o desde nuestro formulario de contacto. Te contactaremos para coordinar día y hora según tu disponibilidad. La primera orientación es gratuita.",
     },
     {
       pregunta: "¿Entregan certificados psicológicos?",
@@ -95,7 +95,7 @@ const ApoyoPsicologico = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="outline" size="lg" asChild className="bg-background hover:bg-background/90">
-                  <a href="https://wa.me/573203240440" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/573203240400" target="_blank" rel="noopener noreferrer">
                     Agenda tu sesión
                   </a>
                 </Button>
@@ -252,7 +252,7 @@ const ApoyoPsicologico = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="outline" size="lg" asChild className="bg-background hover:bg-background/90">
-              <a href="https://wa.me/573203240440" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/573203240400" target="_blank" rel="noopener noreferrer">
                 Agenda tu sesión
               </a>
             </Button>

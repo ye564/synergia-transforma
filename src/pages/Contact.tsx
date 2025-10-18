@@ -39,7 +39,7 @@ const Contact = () => {
                     <MessageCircle className="w-6 h-6 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold mb-1">WhatsApp</h3>
-                      <a href="https://wa.me/573203240440" className="text-primary hover:underline">320 324 0440</a>
+                      <a href="https://wa.me/573203240400" className="text-primary hover:underline">320 324 0400</a>
                     </div>
                   </CardContent>
                 </Card>
@@ -48,8 +48,8 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold mb-1">Correo Electrónico</h3>
-                      <a href="mailto:synergiaintegral@gmail.com" className="text-primary hover:underline">
-                        synergiaintegral@gmail.com
+                      <a href="mailto:yefersonolcunche@gmail.com" className="text-primary hover:underline">
+                        yefersonolcunche@gmail.com
                       </a>
                     </div>
                   </CardContent>

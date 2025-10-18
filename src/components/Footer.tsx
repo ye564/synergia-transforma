@@ -48,11 +48,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link to="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Preguntas Frecuentes
                 </Link>
@@ -105,22 +100,22 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/573203240440"
+                  href="https://wa.me/573203240400"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <MessageCircle className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                  <span>320 324 0440</span>
+                  <span>320 324 0400</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:synergiaintegral@gmail.com"
+                  href="mailto:yefersonolcunche@gmail.com"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <Mail className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                  <span>synergiaintegral@gmail.com</span>
+                  <span>yefersonolcunche@gmail.com</span>
                 </a>
               </li>
             </ul>

@@ -201,7 +201,7 @@ const Admisiones = () => {
                         required
                         value={formData.celular}
                         onChange={(e) => setFormData({ ...formData, celular: e.target.value })}
-                        placeholder="320 324 0440"
+                        placeholder="320 324 0400"
                       />
                     </div>
                   </div>
@@ -276,13 +276,13 @@ const Admisiones = () => {
               <p className="text-muted-foreground mb-4">¿Prefieres contactarnos directamente?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" size="lg" asChild>
-                  <a href="https://wa.me/573203240440" target="_blank" rel="noopener noreferrer">
-                    WhatsApp: 320 324 0440
+                  <a href="https://wa.me/573203240400" target="_blank" rel="noopener noreferrer">
+                    WhatsApp: 320 324 0400
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="mailto:synergiaintegral@gmail.com">
-                    synergiaintegral@gmail.com
+                  <a href="mailto:yefersonolcunche@gmail.com">
+                    yefersonolcunche@gmail.com
                   </a>
                 </Button>
               </div>
