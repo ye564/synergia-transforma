@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { GraduationCap, Heart, Briefcase, Scale, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import GraduatesCarousel from "@/components/GraduatesCarousel";
 import heroImage from "@/assets/hero-graduacion.jpg";
 
 const Home = () => {
@@ -50,26 +51,6 @@ const Home = () => {
     },
   ];
 
-  const testimonios = [
-    {
-      nombre: "María González",
-      testimonio:
-        "Gracias a Synergia pude validar mi bachillerato y ahora estoy estudiando un técnico. El apoyo fue constante y profesional.",
-      ciudad: "Bogotá",
-    },
-    {
-      nombre: "Carlos Ramírez",
-      testimonio:
-        "El apoyo psicológico me ayudó a superar momentos difíciles. Ahora tengo claridad sobre mi futuro profesional.",
-      ciudad: "Medellín",
-    },
-    {
-      nombre: "Ana Martínez",
-      testimonio:
-        "Con su asesoría logré crear mi emprendimiento. Me guiaron desde la idea hasta las primeras ventas.",
-      ciudad: "Cali",
-    },
-  ];
 
   const faqs = [
     {
@@ -189,35 +170,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonios */}
+      {/* Graduados */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Historias de Transformación
+              Nuestros Graduados
             </h2>
-            <p className="text-lg text-muted-foreground">Lo que dicen quienes ya dieron el primer paso</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Conoce a quienes ya transformaron sus vidas con Synergia Integral. Sus logros son nuestra inspiración.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonios.map((testimonio, index) => (
-              <Card key={index} className="border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-primary text-xl">
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                  <p className="text-foreground mb-4 italic">"{testimonio.testimonio}"</p>
-                  <div className="pt-4 border-t border-border">
-                    <p className="font-semibold text-foreground">{testimonio.nombre}</p>
-                    <p className="text-sm text-muted-foreground">{testimonio.ciudad}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <GraduatesCarousel />
         </div>
       </section>
 
