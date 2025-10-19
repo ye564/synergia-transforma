@@ -190,7 +190,7 @@ const Services = () => {
               <Link to="/admisiones">Inscríbete ahora</Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="bg-background/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
-              <a href="https://wa.me/3203240400" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/3203240400?text=${encodeURIComponent("Hola Synergia Integral, quiero información general sobre sus programas.\nMi nombre: ___ | Ciudad: ___ | Interés: ___ (Formación / Psicología / Empleo / Emprendimiento / Legal).\n¿Podemos agendar una orientación gratuita?")}`} target="_blank" rel="noopener noreferrer">
                 Habla por WhatsApp
               </a>
             </Button>

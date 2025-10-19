@@ -92,12 +92,12 @@ const EmpleabilidadEmprendimiento = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="outline" size="lg" asChild className="bg-background hover:bg-background/90">
-                  <a href="https://wa.me/3203240400" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/3203240400?text=${encodeURIComponent("Hola Synergia Integral, quiero información general sobre sus programas.\nMi nombre: ___ | Ciudad: ___ | Interés: ___ (Formación / Psicología / Empleo / Emprendimiento / Legal).\n¿Podemos agendar una orientación gratuita?")}`} target="_blank" rel="noopener noreferrer">
                     Quiero mejorar mi CV
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild className="bg-background/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
-                  <a href="https://wa.me/3203240400" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/3203240400?text=${encodeURIComponent("Hola Synergia Integral, quiero información general sobre sus programas.\nMi nombre: ___ | Ciudad: ___ | Interés: ___ (Formación / Psicología / Empleo / Emprendimiento / Legal).\n¿Podemos agendar una orientación gratuita?")}`} target="_blank" rel="noopener noreferrer">
                     Quiero crear mi negocio
                   </a>
                 </Button>
@@ -332,7 +332,7 @@ const EmpleabilidadEmprendimiento = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="outline" size="lg" asChild className="bg-background hover:bg-background/90">
-              <a href="https://wa.me/3203240400" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/3203240400?text=${encodeURIComponent("Hola Synergia Integral, quiero información general sobre sus programas.\nMi nombre: ___ | Ciudad: ___ | Interés: ___ (Formación / Psicología / Empleo / Emprendimiento / Legal).\n¿Podemos agendar una orientación gratuita?")}`} target="_blank" rel="noopener noreferrer">
                 Agenda orientación
               </a>
             </Button>

@@ -39,7 +39,7 @@ const Contact = () => {
                     <MessageCircle className="w-6 h-6 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold mb-1">WhatsApp</h3>
-                      <a href="https://wa.me/3203240400" className="text-primary hover:underline">320 324 0400</a>
+                      <a href={`https://wa.me/3203240400?text=${encodeURIComponent("Hola Synergia Integral, quiero información general sobre sus programas.\nMi nombre: ___ | Ciudad: ___ | Interés: ___ (Formación / Psicología / Empleo / Emprendimiento / Legal).\n¿Podemos agendar una orientación gratuita?")}`} className="text-primary hover:underline">320 324 0400</a>
                     </div>
                   </CardContent>
                 </Card>
