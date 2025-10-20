@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
+import logo from "@/assets/logo-footer.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,14 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Acerca de */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold">SI</span>
-              </div>
-              <div>
-                <div className="font-heading font-bold text-foreground">Synergia Integral</div>
-                <div className="text-xs text-muted-foreground">Transformando Vidas</div>
-              </div>
+            <div className="mb-4">
+              <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-20 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Educación con titulación oficial, apoyo psicológico y oportunidades para transformar tu vida en Colombia.
