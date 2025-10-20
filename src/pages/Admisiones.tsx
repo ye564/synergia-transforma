@@ -8,6 +8,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const admisionesSchema = z.object({
+  nombre: z.string().trim().min(1, "El nombre es requerido").max(100, "Máximo 100 caracteres"),
+  apellidos: z.string().trim().min(1, "Los apellidos son requeridos").max(100, "Máximo 100 caracteres"),
+  email: z.string().email("Email inválido").max(255, "Máximo 255 caracteres"),
+  celular: z.string().regex(/^[0-9]{10}$/, "Debe ser un número de 10 dígitos"),
+  ciudad: z.string().trim().min(1, "La ciudad es requerida").max(100, "Máximo 100 caracteres"),
+  mensaje: z.string().max(1000, "Máximo 1000 caracteres").optional(),
+});
 
 const Admisiones = () => {
   const { toast } = useToast();
@@ -21,6 +31,7 @@ const Admisiones = () => {
     mensaje: "",
     consentimiento: false,
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const proceso = [
     {
@@ -55,6 +66,7 @@ const Admisiones = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
 
     if (!formData.consentimiento) {
       toast({
@@ -74,13 +86,36 @@ const Admisiones = () => {
       return;
     }
 
-    // Aquí iría la lógica de envío del formulario
+    const result = admisionesSchema.safeParse({
+      nombre: formData.nombre,
+      apellidos: formData.apellidos,
+      email: formData.email,
+      celular: formData.celular,
+      ciudad: formData.ciudad,
+      mensaje: formData.mensaje,
+    });
+
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) {
+          fieldErrors[err.path[0] as string] = err.message;
+        }
+      });
+      setErrors(fieldErrors);
+      toast({
+        title: "Error de validación",
+        description: "Por favor corrige los errores en el formulario.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "¡Gracias por tu inscripción!",
       description: "Pronto nos comunicaremos contigo por WhatsApp o correo electrónico.",
     });
 
-    // Reset form
     setFormData({
       nombre: "",
       apellidos: "",
@@ -163,21 +198,23 @@ const Admisiones = () => {
                       <Label htmlFor="nombre">Nombre *</Label>
                       <Input
                         id="nombre"
-                        required
+                        maxLength={100}
                         value={formData.nombre}
                         onChange={(e) => setFormData({ ...formData, nombre: e.target.value })}
                         placeholder="Tu nombre"
                       />
+                      {errors.nombre && <p className="text-sm text-destructive">{errors.nombre}</p>}
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="apellidos">Apellidos *</Label>
                       <Input
                         id="apellidos"
-                        required
+                        maxLength={100}
                         value={formData.apellidos}
                         onChange={(e) => setFormData({ ...formData, apellidos: e.target.value })}
                         placeholder="Tus apellidos"
                       />
+                      {errors.apellidos && <p className="text-sm text-destructive">{errors.apellidos}</p>}
                     </div>
                   </div>
 
@@ -187,22 +224,24 @@ const Admisiones = () => {
                       <Input
                         id="email"
                         type="email"
-                        required
+                        maxLength={255}
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="tu@correo.com"
                       />
+                      {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="celular">Celular (WhatsApp) *</Label>
+                      <Label htmlFor="celular">Celular (10 dígitos) *</Label>
                       <Input
                         id="celular"
                         type="tel"
-                        required
+                        maxLength={10}
                         value={formData.celular}
                         onChange={(e) => setFormData({ ...formData, celular: e.target.value })}
                         placeholder="320 324 0400"
                       />
+                      {errors.celular && <p className="text-sm text-destructive">{errors.celular}</p>}
                     </div>
                   </div>
 
@@ -210,11 +249,12 @@ const Admisiones = () => {
                     <Label htmlFor="ciudad">Ciudad *</Label>
                     <Input
                       id="ciudad"
-                      required
+                      maxLength={100}
                       value={formData.ciudad}
                       onChange={(e) => setFormData({ ...formData, ciudad: e.target.value })}
                       placeholder="Tu ciudad en Colombia"
                     />
+                    {errors.ciudad && <p className="text-sm text-destructive">{errors.ciudad}</p>}
                   </div>
 
                   <div className="space-y-3">
@@ -242,11 +282,13 @@ const Admisiones = () => {
                     <Label htmlFor="mensaje">Mensaje (opcional)</Label>
                     <Textarea
                       id="mensaje"
+                      maxLength={1000}
                       value={formData.mensaje}
                       onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
                       placeholder="Cuéntanos más sobre tus objetivos y necesidades..."
                       rows={4}
                     />
+                    {errors.mensaje && <p className="text-sm text-destructive">{errors.mensaje}</p>}
                   </div>
 
                   <div className="flex items-start space-x-2">

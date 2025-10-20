@@ -6,13 +6,42 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  nombre: z.string().trim().min(1, "El nombre es requerido").max(100, "Máximo 100 caracteres"),
+  email: z.string().email("Email inválido").max(255, "Máximo 255 caracteres"),
+  telefono: z.string().regex(/^[0-9]{10}$/, "Debe ser un número de 10 dígitos"),
+  mensaje: z.string().trim().min(1, "El mensaje es requerido").max(1000, "Máximo 1000 caracteres"),
+});
 
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ nombre: "", email: "", telefono: "", mensaje: "" });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
+    
+    const result = contactSchema.safeParse(formData);
+    
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) {
+          fieldErrors[err.path[0] as string] = err.message;
+        }
+      });
+      setErrors(fieldErrors);
+      toast({ 
+        title: "Error de validación", 
+        description: "Por favor corrige los errores en el formulario.",
+        variant: "destructive" 
+      });
+      return;
+    }
+    
     toast({ title: "¡Gracias!", description: "Pronto nos comunicaremos contigo." });
     setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
   };
@@ -72,19 +101,46 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="nombre">Nombre *</Label>
-                    <Input id="nombre" required value={formData.nombre} onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} />
+                    <Input 
+                      id="nombre" 
+                      maxLength={100}
+                      value={formData.nombre} 
+                      onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} 
+                    />
+                    {errors.nombre && <p className="text-sm text-destructive">{errors.nombre}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      maxLength={255}
+                      value={formData.email} 
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })} 
+                    />
+                    {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="telefono">Teléfono *</Label>
-                    <Input id="telefono" type="tel" required value={formData.telefono} onChange={(e) => setFormData({ ...formData, telefono: e.target.value })} />
+                    <Label htmlFor="telefono">Teléfono (10 dígitos) *</Label>
+                    <Input 
+                      id="telefono" 
+                      type="tel" 
+                      maxLength={10}
+                      value={formData.telefono} 
+                      onChange={(e) => setFormData({ ...formData, telefono: e.target.value })} 
+                    />
+                    {errors.telefono && <p className="text-sm text-destructive">{errors.telefono}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="mensaje">Mensaje *</Label>
-                    <Textarea id="mensaje" required rows={4} value={formData.mensaje} onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })} />
+                    <Textarea 
+                      id="mensaje" 
+                      rows={4} 
+                      maxLength={1000}
+                      value={formData.mensaje} 
+                      onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })} 
+                    />
+                    {errors.mensaje && <p className="text-sm text-destructive">{errors.mensaje}</p>}
                   </div>
                   <Button type="submit" variant="hero" size="lg" className="w-full">Enviar mensaje</Button>
                 </form>
