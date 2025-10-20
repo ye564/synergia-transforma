@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 
 const contactSchema = z.object({
   nombre: z.string().trim().min(1, "El nombre es requerido").max(100, "Máximo 100 caracteres"),
@@ -17,12 +18,20 @@ const contactSchema = z.object({
 
 const Contact = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({ nombre: "", email: "", telefono: "", mensaje: "" });
+  const [formData, setFormData] = useState({ nombre: "", email: "", telefono: "", mensaje: "", website: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrors({});
+    
+    // Honeypot check - si el campo "website" tiene contenido, es un bot
+    if (formData.website) {
+      toast({ title: "¡Gracias!", description: "Pronto nos comunicaremos contigo." });
+      setFormData({ nombre: "", email: "", telefono: "", mensaje: "", website: "" });
+      return;
+    }
     
     const result = contactSchema.safeParse(formData);
     
@@ -42,8 +51,36 @@ const Contact = () => {
       return;
     }
     
-    toast({ title: "¡Gracias!", description: "Pronto nos comunicaremos contigo." });
-    setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+    setIsSubmitting(true);
+    
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.nombre,
+          from_email: formData.email,
+          telefono: formData.telefono,
+          message: formData.mensaje,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      
+      toast({ 
+        title: "¡Mensaje enviado!", 
+        description: "Gracias por contactarnos. Te responderemos pronto." 
+      });
+      setFormData({ nombre: "", email: "", telefono: "", mensaje: "", website: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({ 
+        title: "Error al enviar", 
+        description: "No pudimos enviar tu mensaje. Por favor intenta de nuevo.",
+        variant: "destructive" 
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -142,7 +179,27 @@ const Contact = () => {
                     />
                     {errors.mensaje && <p className="text-sm text-destructive">{errors.mensaje}</p>}
                   </div>
-                  <Button type="submit" variant="hero" size="lg" className="w-full">Enviar mensaje</Button>
+                  {/* Honeypot field - hidden from users */}
+                  <div className="hidden">
+                    <Label htmlFor="website">Website</Label>
+                    <Input 
+                      id="website" 
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formData.website} 
+                      onChange={(e) => setFormData({ ...formData, website: e.target.value })} 
+                    />
+                  </div>
+                  <Button 
+                    type="submit" 
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Enviando..." : "Enviar mensaje"}
+                  </Button>
                 </form>
               </CardContent>
             </Card>
