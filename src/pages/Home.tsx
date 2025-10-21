@@ -85,7 +85,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 leading-tight">
               Educación, bienestar y oportunidades para transformar tu vida en Colombia
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed text-justify">
               Cuando la vida se pone cuesta arriba, nadie debería caminar solo. En Synergia Integral te acompañamos con
               formación con titulación oficial, apoyo psicológico, orientación para la empleabilidad y el emprendimiento,
               y asesoría en trámites. Todo 100% virtual, cercano y humano, para que puedas aprender, sanar y prosperar.
@@ -114,7 +114,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestros Pilares de Transformación
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Un modelo integral que combina educación, bienestar emocional y fortalecimiento económico
             </p>
           </div>
@@ -129,7 +129,7 @@ const Home = () => {
                     <pilar.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg mb-2">{pilar.title}</h3>
-                  <p className="text-muted-foreground mb-4 text-sm">{pilar.description}</p>
+                  <p className="text-muted-foreground mb-4 text-sm text-justify">{pilar.description}</p>
                   <Link
                     to={pilar.link}
                     className="text-primary hover:text-primary-hover font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
@@ -158,7 +158,7 @@ const Home = () => {
                   <span className="text-3xl font-heading font-bold text-primary-foreground">{paso.numero}</span>
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">{paso.title}</h3>
-                <p className="text-muted-foreground">{paso.description}</p>
+                <p className="text-muted-foreground text-justify">{paso.description}</p>
               </div>
             ))}
           </div>
@@ -177,7 +177,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestros Graduados
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Conoce a quienes ya transformaron sus vidas con Synergia Integral. Sus logros son nuestra inspiración.
             </p>
           </div>
@@ -203,7 +203,7 @@ const Home = () => {
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-lg mb-2">{faq.pregunta}</h3>
-                        <p className="text-muted-foreground">{faq.respuesta}</p>
+                        <p className="text-muted-foreground text-justify">{faq.respuesta}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -225,7 +225,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             ¿Listo para transformar tu vida?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Da el primer paso hoy. Nuestro equipo está listo para acompañarte en tu camino.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

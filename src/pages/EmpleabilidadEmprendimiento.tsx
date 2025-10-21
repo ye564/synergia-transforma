@@ -86,7 +86,7 @@ const EmpleabilidadEmprendimiento = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Empleabilidad y Emprendimiento: De la Idea al Ingreso
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
                 Mejora tu empleabilidad o lanza tu emprendimiento. CV, entrevistas, habilidades, plan de negocio,
                 branding y finanzas. Acompañamiento paso a paso.
               </p>
@@ -123,7 +123,7 @@ const EmpleabilidadEmprendimiento = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Elige Tu Camino
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Ya sea que busques empleo o quieras emprender, tenemos el programa para ti
             </p>
           </div>
@@ -150,7 +150,7 @@ const EmpleabilidadEmprendimiento = () => {
                         <item.icon className="w-7 h-7 text-primary-foreground" />
                       </div>
                       <h3 className="font-heading font-semibold text-xl mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
+                      <p className="text-muted-foreground text-justify">{item.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -220,7 +220,7 @@ const EmpleabilidadEmprendimiento = () => {
                         <item.icon className="w-6 h-6 text-primary-foreground" />
                       </div>
                       <h3 className="font-heading font-semibold text-lg mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                      <p className="text-muted-foreground text-sm text-justify">{item.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -297,7 +297,7 @@ const EmpleabilidadEmprendimiento = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Preguntas Frecuentes
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground text-justify">
                 Resuelve tus dudas sobre empleabilidad y emprendimiento
               </p>
             </div>
@@ -311,7 +311,7 @@ const EmpleabilidadEmprendimiento = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>
@@ -327,7 +327,7 @@ const EmpleabilidadEmprendimiento = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Construye tu futuro profesional
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Ya sea buscando empleo o creando tu negocio, te acompañamos en cada paso del camino
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

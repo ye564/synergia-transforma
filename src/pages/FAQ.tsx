@@ -64,7 +64,7 @@ const FAQ = () => {
                 {categoria.faqs.map((faq, i) => (
                   <AccordionItem key={i} value={`${idx}-${i}`} className="border-2 rounded-lg px-6">
                     <AccordionTrigger className="font-semibold hover:no-underline">{faq.q}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">{faq.a}</AccordionContent>
+                    <AccordionContent className="text-muted-foreground text-justify">{faq.a}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>

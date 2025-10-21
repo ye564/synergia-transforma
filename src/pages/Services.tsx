@@ -75,7 +75,7 @@ const Services = () => {
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
             Nuestros Servicios
           </h1>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto text-justify">
             Soluciones integrales para tu educación, bienestar y desarrollo profesional. Todo 100% virtual y con
             acompañamiento personalizado.
           </p>
@@ -115,7 +115,7 @@ const Services = () => {
                   <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                     {servicio.title}
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{servicio.description}</p>
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-justify">{servicio.description}</p>
 
                   {/* Beneficios */}
                   <div className="space-y-3 mb-8">
@@ -182,7 +182,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             ¿Listo para comenzar tu transformación?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Agenda una orientación gratuita y descubre cuál es el mejor camino para ti
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

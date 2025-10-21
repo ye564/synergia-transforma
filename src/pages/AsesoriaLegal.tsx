@@ -91,7 +91,7 @@ const AsesoriaLegal = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Asesoría Legal y Trámites, con Respaldo
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
                 Orientación jurídica y acompañamiento en trámites académicos/laborales, homologaciones, convalidaciones
                 y RETHUS. Avanza con seguridad legal.
               </p>
@@ -124,7 +124,7 @@ const AsesoriaLegal = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Qué Cubrimos</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Asesoría especializada en trámites académicos, laborales y de emprendimiento
             </p>
           </div>
@@ -139,7 +139,7 @@ const AsesoriaLegal = () => {
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground text-sm">{servicio.description}</p>
+                  <p className="text-muted-foreground text-sm text-justify">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -154,7 +154,7 @@ const AsesoriaLegal = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestro Proceso de Acompañamiento
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground text-justify">
               Te explicamos cada paso y te acompañamos hasta resolver tu trámite
             </p>
           </div>
@@ -253,7 +253,7 @@ const AsesoriaLegal = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>
@@ -269,7 +269,7 @@ const AsesoriaLegal = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             ¿Necesitas asesoría legal?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Agenda una consulta y resuelve tus dudas con nuestros asesores especializados
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

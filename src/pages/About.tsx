@@ -30,7 +30,7 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
             Quiénes Somos
           </h1>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto text-justify">
             Una organización social comprometida con la transformación de vidas a través de la educación, el bienestar y
             las oportunidades
           </p>
@@ -41,13 +41,13 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-foreground leading-relaxed mb-8">
+            <p className="text-lg text-foreground leading-relaxed mb-8 text-justify">
               Somos una organización social que acompaña a estudiantes y beneficiarios en Colombia a superar barreras
               educativas, emocionales y económicas. <strong>Levantamos sueños, derribamos barreras y construimos futuros</strong>{" "}
               mediante educación con respaldo institucional, apoyo psicológico profesional, orientación para el empleo y el
               emprendimiento, y asesoría en trámites.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
               Creemos que cada persona merece una oportunidad para transformar su vida, sin importar sus circunstancias
               actuales. Por eso, trabajamos incansablemente para eliminar las barreras que impiden el acceso a la educación,
               el bienestar emocional y el desarrollo económico.
@@ -69,7 +69,7 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-foreground">Nuestra Misión</h2>
                 </div>
-                <div className="space-y-4 text-foreground leading-relaxed">
+                <div className="space-y-4 text-foreground leading-relaxed text-justify">
                   <p>
                     En Synergia Integral: Transformando Vidas, trabajamos con un propósito claro: generar impacto social
                     real a través de un modelo integral que combine educación de calidad, bienestar emocional y
@@ -98,7 +98,7 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-foreground">Nuestra Visión</h2>
                 </div>
-                <div className="space-y-4 text-foreground leading-relaxed">
+                <div className="space-y-4 text-foreground leading-relaxed text-justify">
                   <p>
                     Ser una empresa social líder en la transformación integral de vidas, reconocida por su compromiso en
                     llegar a miles de personas en situación de vulnerabilidad social, emocional o económica, brindándoles
@@ -126,7 +126,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 A Quiénes Acompañamos
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground text-justify">
                 Trabajamos con personas de todas las edades y contextos que buscan una oportunidad para transformar su
                 vida
               </p>
@@ -177,7 +177,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Únete a nuestra comunidad
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Comienza tu proceso de transformación hoy. Agenda una orientación gratuita y descubre cómo podemos ayudarte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

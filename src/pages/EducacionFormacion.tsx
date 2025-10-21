@@ -80,7 +80,7 @@ const EducacionFormacion = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Formación con Titulación Oficial
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
                 Estudia en Colombia con respaldo institucional. Programas 100% virtuales de bachillerato, técnicos y
                 validación de saberes.
               </p>
@@ -113,7 +113,7 @@ const EducacionFormacion = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Qué Ofrecemos</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Programas educativos con respaldo institucional y acompañamiento personalizado
             </p>
           </div>
@@ -125,7 +125,7 @@ const EducacionFormacion = () => {
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{servicio.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-justify">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -141,7 +141,7 @@ const EducacionFormacion = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Beneficios de Estudiar con Nosotros
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground text-justify">
                 Todo lo que necesitas para avanzar con seguridad en tu formación
               </p>
             </div>
@@ -175,7 +175,7 @@ const EducacionFormacion = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>
@@ -191,7 +191,7 @@ const EducacionFormacion = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Comienza tu formación hoy
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Agenda una orientación gratuita y descubre cómo podemos ayudarte a alcanzar tus metas educativas
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

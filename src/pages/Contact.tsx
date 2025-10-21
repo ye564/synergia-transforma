@@ -88,7 +88,7 @@ const Contact = () => {
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">Contáctanos</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto text-justify">
             ¿Tienes dudas sobre educación, apoyo psicológico o empleabilidad? Escríbenos por WhatsApp o correo.
           </p>
         </div>

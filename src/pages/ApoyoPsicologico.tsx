@@ -89,7 +89,7 @@ const ApoyoPsicologico = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Apoyo Psicológico Online, Cercano y Profesional
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
                 Atención psicológica profesional y accesible. Terapias individuales/familiares, orientación breve,
                 talleres y certificados para trámites.
               </p>
@@ -124,7 +124,7 @@ const ApoyoPsicologico = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Servicios de Apoyo Psicológico
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
               Atención profesional adaptada a tus necesidades
             </p>
           </div>
@@ -139,7 +139,7 @@ const ApoyoPsicologico = () => {
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{servicio.description}</p>
+                  <p className="text-muted-foreground leading-relaxed text-justify">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -153,7 +153,7 @@ const ApoyoPsicologico = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Nuestro Enfoque</h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground text-justify">
                 Atención psicológica basada en principios fundamentales
               </p>
             </div>
@@ -186,25 +186,25 @@ const ApoyoPsicologico = () => {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground text-lg">
+                    <p className="text-foreground text-lg text-justify">
                       <strong>Profesionales colegiados:</strong> Psicólogos con experiencia y formación certificada
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground text-lg">
+                    <p className="text-foreground text-lg text-justify">
                       <strong>Atención flexible:</strong> Sesiones adaptadas a tu horario y disponibilidad
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground text-lg">
+                    <p className="text-foreground text-lg text-justify">
                       <strong>Enfoque integral:</strong> Complementamos tu desarrollo educativo y profesional
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground text-lg">
+                    <p className="text-foreground text-lg text-justify">
                       <strong>Tarifas accesibles:</strong> Opciones de pago diferencial según tu situación
                     </p>
                   </div>
@@ -231,7 +231,7 @@ const ApoyoPsicologico = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>
@@ -247,7 +247,7 @@ const ApoyoPsicologico = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Da el primer paso hacia tu bienestar
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
             Agenda tu primera sesión de orientación gratuita. Estamos aquí para acompañarte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
