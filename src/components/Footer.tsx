@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Acerca de */}
           <div>
             <div className="mb-4">
-              <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-20 w-auto" />
+              <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto transition-all" />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Educación con titulación oficial, apoyo psicológico y oportunidades para transformar tu vida en Colombia.

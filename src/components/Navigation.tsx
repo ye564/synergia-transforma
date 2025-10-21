@@ -34,7 +34,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto transition-all" />
+            <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto transition-all" />
           </Link>
 
           {/* Desktop Menu */}
