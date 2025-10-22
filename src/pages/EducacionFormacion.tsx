@@ -113,7 +113,7 @@ const EducacionFormacion = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Qué Ofrecemos</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center">
               Programas educativos con respaldo institucional y acompañamiento personalizado
             </p>
           </div>
@@ -141,7 +141,7 @@ const EducacionFormacion = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Beneficios de Estudiar con Nosotros
               </h2>
-              <p className="text-lg text-muted-foreground text-justify">
+              <p className="text-lg text-muted-foreground text-center">
                 Todo lo que necesitas para avanzar con seguridad en tu formación
               </p>
             </div>
@@ -191,7 +191,7 @@ const EducacionFormacion = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Comienza tu formación hoy
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Agenda una orientación gratuita y descubre cómo podemos ayudarte a alcanzar tus metas educativas
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

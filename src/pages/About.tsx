@@ -30,7 +30,7 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
             Quiénes Somos
           </h1>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto text-center">
             Una organización social comprometida con la transformación de vidas a través de la educación, el bienestar y
             las oportunidades
           </p>
@@ -126,7 +126,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 A Quiénes Acompañamos
               </h2>
-              <p className="text-lg text-muted-foreground text-justify">
+              <p className="text-lg text-muted-foreground text-center">
                 Trabajamos con personas de todas las edades y contextos que buscan una oportunidad para transformar su
                 vida
               </p>
@@ -177,7 +177,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Únete a nuestra comunidad
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Comienza tu proceso de transformación hoy. Agenda una orientación gratuita y descubre cómo podemos ayudarte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

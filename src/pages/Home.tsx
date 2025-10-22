@@ -114,7 +114,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestros Pilares de Transformación
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center">
               Un modelo integral que combina educación, bienestar emocional y fortalecimiento económico
             </p>
           </div>
@@ -177,7 +177,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestros Graduados
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center">
               Conoce a quienes ya transformaron sus vidas con Synergia Integral. Sus logros son nuestra inspiración.
             </p>
           </div>
@@ -225,7 +225,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             ¿Listo para transformar tu vida?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Da el primer paso hoy. Nuestro equipo está listo para acompañarte en tu camino.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

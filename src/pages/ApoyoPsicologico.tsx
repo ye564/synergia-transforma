@@ -124,7 +124,7 @@ const ApoyoPsicologico = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Servicios de Apoyo Psicológico
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center">
               Atención profesional adaptada a tus necesidades
             </p>
           </div>
@@ -134,12 +134,12 @@ const ApoyoPsicologico = () => {
                 key={index}
                 className="border-2 hover:border-primary hover:shadow-medium transition-all duration-300"
               >
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <CardContent className="p-8 text-center">
+                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-justify">{servicio.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -153,7 +153,7 @@ const ApoyoPsicologico = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Nuestro Enfoque</h2>
-              <p className="text-lg text-muted-foreground text-justify">
+              <p className="text-lg text-muted-foreground text-center">
                 Atención psicológica basada en principios fundamentales
               </p>
             </div>
@@ -247,7 +247,7 @@ const ApoyoPsicologico = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Da el primer paso hacia tu bienestar
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Agenda tu primera sesión de orientación gratuita. Estamos aquí para acompañarte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

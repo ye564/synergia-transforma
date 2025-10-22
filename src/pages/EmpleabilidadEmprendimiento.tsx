@@ -145,19 +145,19 @@ const EmpleabilidadEmprendimiento = () => {
                     key={index}
                     className="border-2 hover:border-primary hover:shadow-medium transition-all duration-300"
                   >
-                    <CardContent className="p-8">
-                      <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <item.icon className="w-7 h-7 text-primary-foreground" />
                       </div>
                       <h3 className="font-heading font-semibold text-xl mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground text-justify">{item.description}</p>
+                      <p className="text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
               <Card className="bg-secondary border-2 border-primary">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-heading font-bold mb-6">Proceso de Empleabilidad</h3>
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-center">Proceso de Empleabilidad</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold">
@@ -297,7 +297,7 @@ const EmpleabilidadEmprendimiento = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Preguntas Frecuentes
               </h2>
-              <p className="text-lg text-muted-foreground text-justify">
+              <p className="text-lg text-muted-foreground text-center">
                 Resuelve tus dudas sobre empleabilidad y emprendimiento
               </p>
             </div>
@@ -327,7 +327,7 @@ const EmpleabilidadEmprendimiento = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             Construye tu futuro profesional
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Ya sea buscando empleo o creando tu negocio, te acompañamos en cada paso del camino
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

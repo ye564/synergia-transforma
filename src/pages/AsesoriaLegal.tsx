@@ -124,7 +124,7 @@ const AsesoriaLegal = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Qué Cubrimos</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center">
               Asesoría especializada en trámites académicos, laborales y de emprendimiento
             </p>
           </div>
@@ -134,12 +134,12 @@ const AsesoriaLegal = () => {
                 key={index}
                 className="border-2 hover:border-primary hover:shadow-medium transition-all duration-300"
               >
-                <CardContent className="p-6">
-                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground text-sm text-justify">{servicio.description}</p>
+                  <p className="text-muted-foreground text-sm">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -154,7 +154,7 @@ const AsesoriaLegal = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
               Nuestro Proceso de Acompañamiento
             </h2>
-            <p className="text-lg text-muted-foreground text-justify">
+            <p className="text-lg text-muted-foreground text-center">
               Te explicamos cada paso y te acompañamos hasta resolver tu trámite
             </p>
           </div>
@@ -269,7 +269,7 @@ const AsesoriaLegal = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             ¿Necesitas asesoría legal?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto text-center">
             Agenda una consulta y resuelve tus dudas con nuestros asesores especializados
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
