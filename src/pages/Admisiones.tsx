@@ -403,8 +403,8 @@ ${formData.mensaje ? `Mensaje adicional:\n${formData.mensaje}` : "Sin mensaje ad
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="mailto:yefersonolcunche@gmail.com">
-                    yefersonolcunche@gmail.com
+                  <a href="mailto:synergiaintegral@gmail.com">
+                    synergiaintegral@gmail.com
                   </a>
                 </Button>
               </div>

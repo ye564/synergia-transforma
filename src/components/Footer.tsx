@@ -108,11 +108,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:yefersonolcunche@gmail.com"
+                  href="mailto:synergiaintegral@gmail.com"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <Mail className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                  <span>yefersonolcunche@gmail.com</span>
+                  <span>synergiaintegral@gmail.com</span>
                 </a>
               </li>
             </ul>

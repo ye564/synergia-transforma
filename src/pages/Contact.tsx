@@ -113,8 +113,8 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <Mail className="w-6 h-6 text-primary mx-auto mb-2" />
                     <h3 className="font-semibold mb-1">Correo Electrónico</h3>
-                    <a href="mailto:yefersonolcunche@gmail.com" className="text-primary hover:underline">
-                      yefersonolcunche@gmail.com
+                    <a href="mailto:synergiaintegral@gmail.com" className="text-primary hover:underline">
+                      synergiaintegral@gmail.com
                     </a>
                   </CardContent>
                 </Card>
