@@ -124,12 +124,12 @@ const Home = () => {
                 key={index}
                 className="group hover:shadow-medium transition-all duration-300 border-2 hover:border-primary"
               >
-                <CardContent className="p-6">
-                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
                     <pilar.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg mb-2">{pilar.title}</h3>
-                  <p className="text-muted-foreground mb-4 text-sm text-justify">{pilar.description}</p>
+                  <p className="text-muted-foreground mb-4 text-sm text-center">{pilar.description}</p>
                   <Link
                     to={pilar.link}
                     className="text-primary hover:text-primary-hover font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
@@ -158,7 +158,7 @@ const Home = () => {
                   <span className="text-3xl font-heading font-bold text-primary-foreground">{paso.numero}</span>
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">{paso.title}</h3>
-                <p className="text-muted-foreground text-justify">{paso.description}</p>
+                <p className="text-muted-foreground text-center">{paso.description}</p>
               </div>
             ))}
           </div>
