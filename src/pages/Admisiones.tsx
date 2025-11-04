@@ -419,9 +419,9 @@ ${formData.mensaje ? `Mensaje adicional:\n${formData.mensaje}` : "Sin mensaje ad
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <Card className="border-2">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-heading font-bold mb-6 flex items-center gap-2">
+                <h3 className="text-2xl font-heading font-bold mb-6 flex flex-col items-center gap-3">
                   <FileText className="w-6 h-6 text-primary" />
-                  Requisitos Generales
+                  <span>Requisitos Generales</span>
                 </h3>
                 <ul className="space-y-3 text-foreground">
                   <li className="flex items-start gap-2">
@@ -449,9 +449,9 @@ ${formData.mensaje ? `Mensaje adicional:\n${formData.mensaje}` : "Sin mensaje ad
 
             <Card className="border-2 border-primary bg-gradient-to-br from-primary/5 to-transparent">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-heading font-bold mb-6 flex items-center gap-2">
+                <h3 className="text-2xl font-heading font-bold mb-6 flex flex-col items-center gap-3">
                   <Award className="w-6 h-6 text-primary" />
-                  Becas y Apoyos
+                  <span>Becas y Apoyos</span>
                 </h3>
                 <div className="space-y-4">
                   <p className="text-foreground">
