@@ -120,12 +120,12 @@ const EducacionFormacion = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {servicios.map((servicio, index) => (
               <Card key={index} className="border-2 hover:border-primary hover:shadow-medium transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <servicio.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="font-heading font-semibold text-xl mb-3">{servicio.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed text-justify">{servicio.description}</p>
+                  <h3 className="font-heading font-semibold text-xl mb-3 text-center">{servicio.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">{servicio.description}</p>
                 </CardContent>
               </Card>
             ))}
