@@ -129,7 +129,7 @@ const EmpleabilidadEmprendimiento = () => {
           </div>
 
           <Tabs defaultValue="empleabilidad" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-2 mb-12">
+            <TabsList className="grid w-full grid-cols-2 mb-12 bg-secondary">
               <TabsTrigger value="empleabilidad" className="text-lg py-4">
                 Empleabilidad
               </TabsTrigger>
@@ -215,19 +215,19 @@ const EmpleabilidadEmprendimiento = () => {
                     key={index}
                     className="border-2 hover:border-primary hover:shadow-medium transition-all duration-300"
                   >
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                    <CardContent className="p-6 text-center">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <item.icon className="w-6 h-6 text-primary-foreground" />
                       </div>
                       <h3 className="font-heading font-semibold text-lg mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground text-sm text-justify">{item.description}</p>
+                      <p className="text-muted-foreground text-sm text-center">{item.description}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
               <Card className="bg-secondary border-2 border-primary">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-heading font-bold mb-6">Ruta del Emprendedor</h3>
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-center">Ruta del Emprendedor</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold mb-3 flex items-center gap-2">
