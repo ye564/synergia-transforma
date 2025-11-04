@@ -63,11 +63,11 @@ const About = () => {
             {/* Misión */}
             <Card className="border-2 border-primary">
               <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex flex-col items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
                     <Target className="w-6 h-6 text-primary-foreground" />
                   </div>
-                  <h2 className="text-2xl font-heading font-bold text-foreground">Nuestra Misión</h2>
+                  <h2 className="text-2xl font-heading font-bold text-foreground text-center">Nuestra Misión</h2>
                 </div>
                 <div className="space-y-4 text-foreground leading-relaxed text-justify">
                   <p>
@@ -92,11 +92,11 @@ const About = () => {
             {/* Visión */}
             <Card className="border-2 border-primary">
               <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex flex-col items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
                     <Eye className="w-6 h-6 text-primary-foreground" />
                   </div>
-                  <h2 className="text-2xl font-heading font-bold text-foreground">Nuestra Visión</h2>
+                  <h2 className="text-2xl font-heading font-bold text-foreground text-center">Nuestra Visión</h2>
                 </div>
                 <div className="space-y-4 text-foreground leading-relaxed text-justify">
                   <p>
