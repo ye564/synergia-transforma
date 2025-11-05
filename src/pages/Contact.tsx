@@ -130,7 +130,7 @@ const Contact = () => {
 
             <Card className="border-2">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-heading font-bold mb-6">Envíanos un Mensaje</h3>
+                <h3 className="text-2xl font-heading font-bold mb-6 text-center">Envíanos un Mensaje</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="nombre">Nombre *</Label>
