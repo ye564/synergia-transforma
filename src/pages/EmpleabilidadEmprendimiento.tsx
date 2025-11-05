@@ -128,13 +128,13 @@ const EmpleabilidadEmprendimiento = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="empleabilidad" className="max-w-6xl mx-auto">
-            <div className="bg-secondary p-4 rounded-lg mb-12">
-              <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
-                <TabsTrigger value="empleabilidad" className="text-lg py-4">
+          	<Tabs defaultValue="empleabilidad" className="max-w-6xl mx-auto">
+            	<div className="bg-secondary p-4 rounded-lg mb-12 overflow-hidden">
+              	<TabsList className="grid w-full grid-cols-2 max-w-md mx-auto rounded-xl h-auto">
+                	<TabsTrigger value="empleabilidad" className="text-lg py-4 data-[state=active]:shadow-none">
                   Empleabilidad
                 </TabsTrigger>
-                <TabsTrigger value="emprendimiento" className="text-lg py-4">
+                	<TabsTrigger value="emprendimiento" className="text-lg py-4 data-[state=active]:shadow-none">
                   Emprendimiento
                 </TabsTrigger>
               </TabsList>
