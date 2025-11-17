@@ -115,7 +115,7 @@ const Services = () => {
                   <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                     {servicio.title}
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-justify">{servicio.description}</p>
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-left">{servicio.description}</p>
 
                   {/* Beneficios */}
                   <div className="space-y-3 mb-8">

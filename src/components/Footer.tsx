@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="mb-4">
               <img src={logo} alt="Synergia Integral - Transformando Vidas" className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto transition-all" />
             </div>
-            <p className="text-sm text-muted-foreground mb-4 text-justify">
+            <p className="text-sm text-muted-foreground mb-4 text-left">
               Educación con titulación oficial, apoyo psicológico y oportunidades para transformar tu vida en Colombia.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">

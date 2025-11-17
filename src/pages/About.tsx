@@ -41,13 +41,13 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-foreground leading-relaxed mb-8 text-justify">
+            <p className="text-lg text-foreground leading-relaxed mb-8 text-left">
               Somos una organización social que acompaña a estudiantes y beneficiarios en Colombia a superar barreras
               educativas, emocionales y económicas. <strong>Levantamos sueños, derribamos barreras y construimos futuros</strong>{" "}
               mediante educación con respaldo institucional, apoyo psicológico profesional, orientación para el empleo y el
               emprendimiento, y asesoría en trámites.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+            <p className="text-lg text-muted-foreground leading-relaxed text-left">
               Creemos que cada persona merece una oportunidad para transformar su vida, sin importar sus circunstancias
               actuales. Por eso, trabajamos incansablemente para eliminar las barreras que impiden el acceso a la educación,
               el bienestar emocional y el desarrollo económico.
@@ -69,7 +69,7 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-foreground text-center">Nuestra Misión</h2>
                 </div>
-                <div className="space-y-4 text-foreground leading-relaxed text-justify">
+                <div className="space-y-4 text-foreground leading-relaxed text-left">
                   <p>
                     En Synergia Integral: Transformando Vidas, trabajamos con un propósito claro: generar impacto social
                     real a través de un modelo integral que combine educación de calidad, bienestar emocional y
@@ -98,7 +98,7 @@ const About = () => {
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-foreground text-center">Nuestra Visión</h2>
                 </div>
-                <div className="space-y-4 text-foreground leading-relaxed text-justify">
+                <div className="space-y-4 text-foreground leading-relaxed text-left">
                   <p>
                     Ser una empresa social líder en la transformación integral de vidas, reconocida por su compromiso en
                     llegar a miles de personas en situación de vulnerabilidad social, emocional o económica, brindándoles

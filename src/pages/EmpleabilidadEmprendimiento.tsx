@@ -86,7 +86,7 @@ const EmpleabilidadEmprendimiento = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Empleabilidad y Emprendimiento: De la Idea al Ingreso
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-left">
                 Mejora tu empleabilidad o lanza tu emprendimiento. CV, entrevistas, habilidades, plan de negocio,
                 branding y finanzas. Acompañamiento paso a paso.
               </p>
@@ -313,7 +313,7 @@ const EmpleabilidadEmprendimiento = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-left">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>
