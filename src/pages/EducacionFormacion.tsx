@@ -80,7 +80,7 @@ const EducacionFormacion = () => {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
                 Formación con Titulación Oficial
               </h1>
-              <p className="text-xl text-primary-foreground/90 mb-8 text-justify">
+              <p className="text-xl text-primary-foreground/90 mb-8 text-left">
                 Estudia en Colombia con respaldo institucional. Programas 100% virtuales de bachillerato, técnicos y
                 validación de saberes.
               </p>
@@ -175,7 +175,7 @@ const EducacionFormacion = () => {
                   <AccordionTrigger className="text-left font-semibold hover:no-underline">
                     {faq.pregunta}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed text-justify">
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-left">
                     {faq.respuesta}
                   </AccordionContent>
                 </AccordionItem>

@@ -85,7 +85,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 leading-tight">
               Educación, bienestar y oportunidades para transformar tu vida en Colombia
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed text-justify">
+            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed text-left">
               Cuando la vida se pone cuesta arriba, nadie debería caminar solo. En Synergia Integral te acompañamos con
               formación con titulación oficial, apoyo psicológico, orientación para la empleabilidad y el emprendimiento,
               y asesoría en trámites. Todo 100% virtual, cercano y humano, para que puedas aprender, sanar y prosperar.
@@ -203,7 +203,7 @@ const Home = () => {
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-lg mb-2">{faq.pregunta}</h3>
-                        <p className="text-muted-foreground text-justify">{faq.respuesta}</p>
+                        <p className="text-muted-foreground text-left">{faq.respuesta}</p>
                       </div>
                     </div>
                   </CardContent>
