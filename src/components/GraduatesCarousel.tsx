@@ -60,7 +60,7 @@ const GraduatesCarousel = () => {
                   <img
                     src={graduado}
                     alt={`Graduado ${index + 1} - Synergia Integral`}
-                    className="w-full h-80 object-cover rounded-lg"
+                    className="w-full aspect-[3/4] object-cover object-top rounded-lg"
                   />
                 </CardContent>
               </Card>
