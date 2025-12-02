@@ -159,18 +159,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-border pt-8 flex justify-center items-center">
           <p className="text-sm text-muted-foreground">
             © {currentYear} Synergia Integral. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6">
-            <Link to="/contacto" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Aviso Legal
-            </Link>
-            <Link to="/contacto" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Política de Privacidad
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
